@@ -9,37 +9,72 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">
-        <span><i class="fa fa-key"></i></span>Key
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Login</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Register</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#"
+            ><span><i class="fa fa-key"></i></span>Key</a
+          >
+        </div>
+        <div class="hamburger">
+          <img src="./img/menuBtn.png" alt="Menu Btn" />
+        </div>
+        <ul class="nav-links menu-links">
+          <li class="close-menu-btn">
+            <button type="button">
+              <p>&times;</p>
+            </button>
+          </li>
+          <li><a href="#login-wrapper">Login</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-      <div class="html-img">image</div>
+      <div class="login-wrapper" id="login-wrapper">
+        <div class="html-img">
+          <img src="./img/login.png" alt="Html Logo" />
+        </div>
 
-      <form action="#" class="form">
-        <div class="input-name">
-          <i class="fa fa-user"></i
-          ><input type="text" name="name" id="name" placeholder="Username" />
+        <form action="#" class="form">
+          <div class="input-name">
+            <i class="fa fa-user"></i
+            ><input type="text" name="name" id="name" placeholder="Username" />
+          </div>
+          <div class="input-name">
+            <i class="fa fa-lock"></i
+            ><input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+
+          <button type="submit">GET STARTED</button>
+        </form>
+        <div class="password-info">
+          <a href="#">Keep me Logged in</a>
+          <a href="#">Forgot password?</a>
         </div>
-        <div class="input-name">
-          <i class="fa fa-lock"></i
-          ><input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-          />
+        <div class="account-info">
+          <a href="#">CREATE ACCOUNT</a>
+          <a href="#">NEED HELP ?</a>
         </div>
-        <button type="submit">GET STARTED</button>
-      </form>
+      </div>
+      <footer>
+        <ul class="footer-left-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+        </ul>
+        <div class="footer-description">
+          <p>&copy; 2021 Key. All Right Deserved | Design by Hiro Mataba</p>
+        </div>
+      </footer>
     </main>
 
     <script src="index.js"></script>
